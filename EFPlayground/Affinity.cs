@@ -22,5 +22,7 @@ namespace EFPlayground
 
         public virtual DbSet<BaseUserAffinity> UserAffinities { get; set; }
         public virtual DbSet<Content> Contents { get; set; }
-     }
+        public virtual DbSet<PreviewContent> PreviewContents { get; set; }
+        public virtual DbSet<Event> Events { get; set; }
+    }
 }

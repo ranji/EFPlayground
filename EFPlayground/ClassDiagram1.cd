@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="EFPlayground.ContentUserAffinity">
-    <Position X="6.25" Y="2.5" Width="1.5" />
+    <Position X="6.25" Y="2.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContentUserAffinity.cs</FileName>
@@ -10,7 +10,7 @@
       <Property Name="Content" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="EFPlayground.BaseUserAffinity" Collapsed="true">
+  <Class Name="EFPlayground.BaseUserAffinity">
     <Position X="8" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAA=</HashCode>
@@ -19,6 +19,13 @@
   </Class>
   <Class Name="EFPlayground.PreviewContentUserAffinity">
     <Position X="9.5" Y="2.5" Width="1.5" />
+    <AssociationLine Name="PreviewContent" Type="EFPlayground.PreviewContent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="2.938" />
+        <Point X="13.25" Y="2.938" />
+        <Point X="13.25" Y="3.75" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>PreviewContentUserAffinity.cs</FileName>

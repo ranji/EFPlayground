@@ -17,14 +17,24 @@ namespace EFPlayground
             };
 
             contents.ForEach(c=>context.Contents.Add(c));
-            context.SaveChanges();
-
+            
             var previewContents  = new List<PreviewContent>()
             {
                 new PreviewContent{Id = 1},
                 new PreviewContent{Id = 2}
             };
+            
+            previewContents.ForEach(p=>context.PreviewContents.Add(p));
+            
+            var events   = new List<Event>()
+            {
+                new Event{Id = 1},
+                new Event{Id = 2}
+            };
 
+            events.ForEach(e=>context.Events.Add(e));
+
+            
             var contentUserAffinities = new List<ContentUserAffinity>
             {
                 new ContentUserAffinity {Content = contents[0], Vote = 1, UserId = 1},
@@ -41,6 +51,14 @@ namespace EFPlayground
 
             previewContentUserAffinities.ForEach(p=>context.UserAffinities.Add(p));
 
+            var eventUserAffinities   = new List<EventUserAffinity>()
+            {
+                new EventUserAffinity {Event = events[0], Vote = 1, UserId = 1},
+                new EventUserAffinity {Event = events[1], Vote = 1, UserId = 1}
+            };
+
+            eventUserAffinities.ForEach(p => context.UserAffinities.Add(p));
+            
             context.SaveChanges();
             
         }

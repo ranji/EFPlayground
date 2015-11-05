@@ -68,6 +68,8 @@
     <Compile Include="BaseUserAffinity.cs" />
     <Compile Include="Content.cs" />
     <Compile Include="ContentUserAffinity.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="EventUserAffinity.cs" />
     <Compile Include="LikeDislikeTests.cs" />
     <Compile Include="PreviewContent.cs" />
     <Compile Include="PreviewContentUserAffinity.cs" />
@@ -75,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
